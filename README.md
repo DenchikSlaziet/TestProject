@@ -45,7 +45,7 @@ INSERT INTO [dbo].[Orders]
            ,GETDATE()
            ,'Insert'
            ,null),
-		    ('75185c94-fc8c-478d-9e89-169fdbda0709'
+	   ('75185c94-fc8c-478d-9e89-169fdbda0709'
            ,'СПб'
            ,'Пример Адреса'
            ,'Москва'
@@ -57,7 +57,7 @@ INSERT INTO [dbo].[Orders]
            ,GETDATE()
            ,'Insert'
            ,null),
-		   ('b65943ec-0a09-4824-8a57-e2b63b7e3b1c'
+	   ('b65943ec-0a09-4824-8a57-e2b63b7e3b1c'
            ,'Краснодар'
            ,'Пример Адреса'
            ,'Владимир'
