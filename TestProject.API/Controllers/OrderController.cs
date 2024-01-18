@@ -11,7 +11,7 @@ using TestProject.Services.Contracts.Models;
 namespace TestProject.API.Controllers
 {
     /// <summary>
-    /// CRUD контроллер по работе с клиентами
+    /// CRUD контроллер по работе с заказами
     /// </summary>
     [ApiController]
     [Route("[Controller]")]
