@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using System.Diagnostics;
 using TestProject.Common.Entity.InterfaceDB;
 
@@ -10,7 +11,7 @@ namespace TestProject.Context.Tests
         private readonly CancellationTokenSource cancellationTokenSource;
 
         /// <summary>
-        /// Контекст <see cref="TicketSellingContext"/>
+        /// Контекст <see cref="TestProjectContext"/>
         /// </summary>
         protected TestProjectContext Context { get; }
 
