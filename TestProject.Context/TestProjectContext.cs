@@ -23,7 +23,7 @@ namespace TestProject.Context
         IDbWriter,
         IUnitOfWork
     {
-        public DbSet<Order> Orders { get; }
+        public DbSet<Order> Orders { get; set; }
 
         public TestProjectContext(DbContextOptions<TestProjectContext> options) : base(options)
         {

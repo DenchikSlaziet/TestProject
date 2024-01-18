@@ -7,7 +7,7 @@ namespace TestProject.Repositories.Contracts
         /// <summary>
         /// Получить <see cref="Order"/> по номеру
         /// </summary>
-        Task<Order?> GetById(Guid number, CancellationToken cancellationToken);
+        Task<Order?> GetByIdAsync(Guid number, CancellationToken cancellationToken);
 
         /// <summary>
         /// Получить список всех <see cref="Order"/>
