@@ -6,4 +6,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TestProject.Common.Entity\TestProject.Common.Entity.csproj" />
+    <ProjectReference Include="..\TestProject.Context.Contracts\TestProject.Context.Contracts.csproj" />
+    <ProjectReference Include="..\TestProject.General\TestProject.General.csproj" />
+    <ProjectReference Include="..\TestProject.Repositories.Contracts\TestProject.Repositories.Contracts.csproj" />
+  </ItemGroup>
+
 </Project>
