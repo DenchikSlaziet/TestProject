@@ -42,7 +42,7 @@ namespace TestProject.Services.Services
 
         async Task IOrderService.DeleteAsync(Guid number, CancellationToken cancellationToken)
         {
-            var item = await orderReadRepository.GetById(number, cancellationToken);
+            var item = await orderReadRepository.GetByIdAsync(number, cancellationToken);
 
             if (item == null)
             {
@@ -57,7 +57,7 @@ namespace TestProject.Services.Services
         {
             await validator.ValidateAsync(source, cancellationToken);
 
-            var order = await orderReadRepository.GetById(source.Number, cancellationToken);
+            var order = await orderReadRepository.GetByIdAsync(source.Number, cancellationToken);
 
             if(order == null)
             {
@@ -80,7 +80,7 @@ namespace TestProject.Services.Services
 
         async Task<OrderModel?> IOrderService.GetByIdAsync(Guid number, CancellationToken cancellationToken)
         {
-            var item = await orderReadRepository.GetById(number, cancellationToken);
+            var item = await orderReadRepository.GetByIdAsync(number, cancellationToken);
 
             if (item == null)
             {

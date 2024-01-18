@@ -28,7 +28,7 @@ namespace TestProject.Repositories.ReadRepositories
                 .OrderBy(x => x.PickupDate)
                 .ToReadOnlyCollectionAsync(cancellationToken);
 
-        Task<Order?> IOrderReadRepository.GetById(Guid number, CancellationToken cancellationToken)
+        Task<Order?> IOrderReadRepository.GetByIdAsync(Guid number, CancellationToken cancellationToken)
             => reader.Read<Order>()
                 .ById(number)
                 .NotDeletedAt()
